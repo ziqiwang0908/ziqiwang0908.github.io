@@ -16,7 +16,7 @@ I am also a Teaching Assistant for [Prof. Wes Cowan's](https://sites.rutgers.edu
 I am actively seeking new research opportunities and am eager to collaborate with other wonderful labs.
 
 ## Research Experience
-* **Research Assistant**, Advisor: [Prof. Yongfeng Zhang](https://yongfeng.me/), Rutgers University, Sep 2025 – Present
+* **Research Assistant**, Advisor: [Prof. Yongfeng Zhang](https://yongfeng.me/), Rutgers University, June 2025 – Present
 
 ## Teaching Experience
 * **Teaching Assistant**, CS462: Introduction to Deep Learning, Rutgers University, 2025 Fall
