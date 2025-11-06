@@ -45,16 +45,27 @@ I am actively seeking new research opportunities and am eager to collaborate wit
 
 <style>
   .page__content {
-    max-width: 1400px !important;
+    max-width: 100% !important;
   }
 
+/* --- 2. 更改正文段落 (p) 的字体和间距 --- */
   .page__content p {
     font-family: "Calibri", sans-serif !important;
     font-size: 18px !important;
+    line-height: 1.3 !important;      /* 缩小行间距 */
+    margin-bottom: 12px !important; /* 缩小段间距 */
   }
 
+  /* --- 3. 更改 bullet point 列表 (li) 的字体和间距 --- */
   .page__content li {
     font-family: "Calibri", sans-serif !important;
     font-size: 18px !important;
+    line-height: 1.3 !important;      /* 缩小行间距 */
+  }
+
+  /* --- 4. 缩小 bullet point 列表 (*) 本身的间距 --- */
+  .page__content ul {
+     margin-top: 12px !important;    /* 缩小列表上方的间距 */
+     margin-bottom: 12px !important; /* 缩小列表下方的间距 */
   }
 </style>
