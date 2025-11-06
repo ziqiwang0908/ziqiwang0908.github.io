@@ -6,8 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-## About Me
-
 I am Ziqi Wang, a Master's student in Computer Science at [Rutgers University](https://www.rutgers.edu/), expecting to graduate in January 2027. My research interests are in AI Agents, especially in their planning and reasoning capabilities.
 
 I am currently a Research Assistant in [Prof. Yongfeng Zhang’s lab](https://yongfeng.me/), focusing on Agentic RAG. My work investigates how different combinations of data representations and queries impact retriever performance.
