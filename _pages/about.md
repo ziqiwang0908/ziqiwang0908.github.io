@@ -42,3 +42,9 @@ I am actively seeking new research opportunities and am eager to collaborate wit
   **Major:** International Education (Pedagogy & Linguistics)
   <br>
   **GPA:** 3.98/4.0
+
+<style>
+  .page__content {
+    max-width: 1400px !important;
+  }
+</style>
