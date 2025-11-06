@@ -44,7 +44,11 @@ I am actively seeking new research opportunities and am eager to collaborate wit
   **GPA:** 3.98/4.0
 
 <style>
+  body {
+    font-family: "Georgia", serif !important; /* 1. 更改字体 */
+    font-size: 18px !important;               /* 2. 更改字体大小 */
+  }
   .page__content {
-    max-width: 1400px !important;
+    max-width: 1600px !important;
   }
 </style>
