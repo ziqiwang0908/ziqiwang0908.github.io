@@ -19,12 +19,12 @@ I am actively seeking new research opportunities and am eager to collaborate wit
 
 * **M.S. Student**, Jan 2025 – Jan 2027 (expected), [Rutgers University](https://www.rutgers.edu/), New Brunswick, NJ.
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp; **Major:** Computer Science (Artificial Intelligence)
+  **Major:** Computer Science (Artificial Intelligence)
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp; **GPA:** 4.0/4.0
+  **GPA:** 4.0/4.0
 
-* **B.L. Student** (Bachelor of Literature), Sep 2020 - Jun 2024, [Hebei University of Technology](https://www.hebut.edu.cn/), Tianjin, China.
+* **B.L. Student**, Sep 2020 - Jun 2024, [Hebei University of Technology](https://www.hebut.edu.cn/), Tianjin, China.
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp; **Major:** International Education (Pedagogy & Linguistics)
+  **Major:** International Education (Pedagogy & Linguistics)
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp; **GPA:** 3.98/4.0
+  **GPA:** 3.98/4.0
