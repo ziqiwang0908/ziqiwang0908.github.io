@@ -9,9 +9,9 @@ redirect_from:
 
 I am Ziqi Wang, a Master's student in Computer Science at [Rutgers University](https://www.rutgers.edu/), expecting to graduate in January 2027. My research interests are in AI Agents, especially in their planning and reasoning capabilities.
 
-I am currently a Research Assistant in [Prof. Yongfeng Zhang’s lab](https://yongfeng.me/), focusing on Agentic RAG. My work investigates how different combinations of data representations and queries impact retriever performance.
+I am currently a Research Assistant in [Prof. Yongfeng Zhang](https://yongfeng.me/)’s lab, focusing on Agentic RAG. My work investigates how different combinations of data representations and queries impact retriever performance.
 
-I am also a Teaching Assistant for [Prof. Wes Cowan's](https://sites.rutgers.edu/wes-cowan/) courses on [Deep Learning](https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-462-introduction-to-deep-learning) and [Introduction to AI](https://sites.rutgers.edu/wes-cowan/cs-520-introduction-to-artificial-intelligence/). In this role, I help students understand the foundational mathematical models of neural networks and guide them in building models of increasing complexity.
+I am also a Teaching Assistant for [Prof. Wes Cowan](https://sites.rutgers.edu/wes-cowan/)'s courses on [Deep Learning](https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-462-introduction-to-deep-learning) and [Introduction to AI](https://sites.rutgers.edu/wes-cowan/cs-520-introduction-to-artificial-intelligence/). In this role, I help students understand the foundational mathematical models of neural networks and guide them in building models of increasing complexity.
 
 I am actively seeking new research opportunities and am eager to collaborate with other wonderful labs.
 
@@ -43,26 +43,3 @@ I am actively seeking new research opportunities and am eager to collaborate wit
   **Major:** International Education (Pedagogy & Linguistics)
   <br>
   **GPA:** 3.98/4.0
-
-<style>  
-  /* --- 2. 更改正文段落 (p) 的字体和间距 --- */
-  .page__content p {
-    font-family: "Calibri", sans-serif !important;
-    font-size: 18px !important;
-    line-height: 1.3 !important;      /* 缩小行间距 */
-    margin-bottom: 12px !important; /* 缩小段间距 */
-  }
-
-  /* --- 3. 更改 bullet point 列表 (li) 的字体和间距 --- */
-  .page__content li {
-    font-family: "Calibri", sans-serif !important;
-    font-size: 18px !important;
-    line-height: 1.3 !important;      /* 缩小行间距 */
-  }
-
-  /* --- 4. 缩小 bullet point 列表 (*) 本身的间距 --- */
-  .page__content ul {
-     margin-top: 12px !important;    /* 缩小列表上方的间距 */
-     margin-bottom: 12px !important; /* 缩小列表下方的间距 */
-  }
-</style>
