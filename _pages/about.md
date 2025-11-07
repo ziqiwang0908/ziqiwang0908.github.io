@@ -29,9 +29,7 @@ I am actively seeking new research opportunities and am eager to collaborate wit
 * **LLM and Data Analysis Intern**, Digital Industrial Software Dept., [Siemens Ltd.](https://www.siemens.com/cn/en.html)
   <br>
   Beijing, China, 05/2025 – 08/2025
-* **AI Engineer Intern**, Product Development Dept., [Turingops Co., Ltd.](https://github.com/TuringOpsSH/NextConsole)
-  <br>
-  Shanghai, China, 04/2024 – 11/2024
+* **AI Engineer Intern**, Product Development Dept., [Turingops Co., Ltd.](https://github.com/TuringOpsSH/NextConsole), Shanghai, China, 04/2024 – 11/2024
 * **Back-end Development Intern**, Product Development Dept., [SOHU.com Limited](https://www.sohu.com/)
   <br>
   Wuhan, China, 01/2024 – 04/2024
@@ -44,7 +42,7 @@ I am actively seeking new research opportunities and am eager to collaborate wit
   <br>
   **Major:** Computer Science (Artificial Intelligence)
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp; **GPA:** 4.0/4.0
+  **GPA:** 4.0/4.0
 
 * **B.L. Student**, Sep 2020 - Jun 2024, [Hebei University of Technology](https://www.hebut.edu.cn/), Tianjin, China.
   <br>
