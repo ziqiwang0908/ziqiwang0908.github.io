@@ -6,6 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
 I am Ziqi Wang, a Master's student in Computer Science at [Rutgers University](https://www.rutgers.edu/), expecting to graduate in January 2027. My research interests are in AI Agents, especially in their planning and reasoning capabilities.
 
 I am currently a Research Assistant in [Prof. Yongfeng Zhang’s lab](https://yongfeng.me/), focusing on Agentic RAG. My work investigates how different combinations of data representations and queries impact retriever performance.
@@ -33,23 +34,27 @@ I am actively seeking new research opportunities and am eager to collaborate wit
 ## Education
 * **M.S. Student**, Jan 2025 – Jan 2027 (expected), [Rutgers University](https://www.rutgers.edu/), New Brunswick, NJ.
   <br>
-  **Major:** Computer Science (Artificial Intelligence)
+  &nbsp;&nbsp;&nbsp;&nbsp; **Major:** Computer Science (Artificial Intelligence)
   <br>
-  **GPA:** 4.0/4.0
+  &nbsp;&nbsp;&nbsp;&nbsp; **GPA:** 4.0/4.0
 
 * **B.L. Student**, Sep 2020 - Jun 2024, [Hebei University of Technology](https://www.hebut.edu.cn/), Tianjin, China.
   <br>
-  **Major:** International Education (Pedagogy & Linguistics)
+  &nbsp;&nbsp;&nbsp;&nbsp; **Major:** International Education (Pedagogy & Linguistics)
   <br>
-  **GPA:** 3.98/4.0
+  &nbsp;&nbsp;&nbsp;&nbsp; **GPA:** 3.98/4.0
+
+---
+---
 
 <style>
-  .page__content {
-    max-width: 100% !important;
+  /* --- 1. 调宽左右距离 (使用 100% 和正确的名字) --- */
+  .layout__content {
+    max-width: 100% !important; 
   }
-
-/* --- 2. 更改正文段落 (p) 的字体和间距 --- */
-  .page__content p {
+  
+  /* --- 2. 更改正文段落 (p) 的字体和间距 --- */
+  .layout__content p {
     font-family: "Calibri", sans-serif !important;
     font-size: 18px !important;
     line-height: 1.3 !important;      /* 缩小行间距 */
@@ -57,14 +62,14 @@ I am actively seeking new research opportunities and am eager to collaborate wit
   }
 
   /* --- 3. 更改 bullet point 列表 (li) 的字体和间距 --- */
-  .page__content li {
+  .layout__content li {
     font-family: "Calibri", sans-serif !important;
     font-size: 18px !important;
     line-height: 1.3 !important;      /* 缩小行间距 */
   }
 
   /* --- 4. 缩小 bullet point 列表 (*) 本身的间距 --- */
-  .page__content ul {
+  .layout__content ul {
      margin-top: 12px !important;    /* 缩小列表上方的间距 */
      margin-bottom: 12px !important; /* 缩小列表下方的间距 */
   }
