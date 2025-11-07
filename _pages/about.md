@@ -34,27 +34,24 @@ I am actively seeking new research opportunities and am eager to collaborate wit
 ## Education
 * **M.S. Student**, Jan 2025 – Jan 2027 (expected), [Rutgers University](https://www.rutgers.edu/), New Brunswick, NJ.
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp; **Major:** Computer Science (Artificial Intelligence)
+  **Major:** Computer Science (Artificial Intelligence)
   <br>
   &nbsp;&nbsp;&nbsp;&nbsp; **GPA:** 4.0/4.0
 
 * **B.L. Student**, Sep 2020 - Jun 2024, [Hebei University of Technology](https://www.hebut.edu.cn/), Tianjin, China.
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp; **Major:** International Education (Pedagogy & Linguistics)
+  **Major:** International Education (Pedagogy & Linguistics)
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp; **GPA:** 3.98/4.0
-
----
----
+  **GPA:** 3.98/4.0
 
 <style>
-  /* --- 1. 调宽左右距离 (使用 100% 和正确的名字) --- */
-  .layout__content {
+  /* --- 1. 调宽左右距离 (使用你想要的 100%) --- */
+  .page__content {
     max-width: 100% !important; 
   }
   
   /* --- 2. 更改正文段落 (p) 的字体和间距 --- */
-  .layout__content p {
+  .page__content p {
     font-family: "Calibri", sans-serif !important;
     font-size: 18px !important;
     line-height: 1.3 !important;      /* 缩小行间距 */
@@ -62,14 +59,14 @@ I am actively seeking new research opportunities and am eager to collaborate wit
   }
 
   /* --- 3. 更改 bullet point 列表 (li) 的字体和间距 --- */
-  .layout__content li {
+  .page__content li {
     font-family: "Calibri", sans-serif !important;
     font-size: 18px !important;
     line-height: 1.3 !important;      /* 缩小行间距 */
   }
 
   /* --- 4. 缩小 bullet point 列表 (*) 本身的间距 --- */
-  .layout__content ul {
+  .page__content ul {
      margin-top: 12px !important;    /* 缩小列表上方的间距 */
      margin-bottom: 12px !important; /* 缩小列表下方的间距 */
   }
