@@ -26,16 +26,10 @@ I am actively seeking new research opportunities and am eager to collaborate wit
 * **Teaching Assistant**, CS520: Introduction to AI, Rutgers University, 2025 Fall
 
 ## Working Experience
-* **LLM and Data Analysis Intern**, Digital Industrial Software Dept., [Siemens Ltd.](https://www.siemens.com/cn/en.html)
-  <br>
-  Beijing, China, 05/2025 – 08/2025
+* **LLM and Data Analysis Intern**, Digital Industrial Software Dept., [Siemens Ltd.](https://www.siemens.com/cn/en.html), Beijing, China, 05/2025 – 08/2025
 * **AI Engineer Intern**, Product Development Dept., [Turingops Co., Ltd.](https://github.com/TuringOpsSH/NextConsole), Shanghai, China, 04/2024 – 11/2024
-* **Back-end Development Intern**, Product Development Dept., [SOHU.com Limited](https://www.sohu.com/)
-  <br>
-  Wuhan, China, 01/2024 – 04/2024
-* **Cybersecurity Intern**, Danfoss Group IT, [Danfoss Ltd.](https://www.danfoss.com/en-us/)
-  <br>
-  Tianjin, China, 03/2023 – 12/2023
+* **Back-end Development Intern**, Product Development Dept., [SOHU.com Limited](https://www.sohu.com/), Wuhan, China, 01/2024 – 04/2024
+* **Cybersecurity Intern**, Danfoss Group IT, [Danfoss Ltd.](https://www.danfoss.com/en-us/), Tianjin, China, 03/2023 – 12/2023
 
 ## Education
 * **M.S. Student**, Jan 2025 – Jan 2027 (expected), [Rutgers University](https://www.rutgers.edu/), New Brunswick, NJ.
