@@ -37,7 +37,6 @@ I am actively seeking new research opportunities and am eager to collaborate wit
   **Major:** Computer Science (Artificial Intelligence)
   <br>
   **GPA:** 4.0/4.0
-
 * **B.L. Student**, Sep 2020 - Jun 2024, [Hebei University of Technology](https://www.hebut.edu.cn/), Tianjin, China.
   <br>
   **Major:** International Education (Pedagogy & Linguistics)
