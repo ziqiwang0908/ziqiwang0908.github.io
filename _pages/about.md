@@ -52,12 +52,7 @@ I am actively seeking new research opportunities and am eager to collaborate wit
   <br>
   **GPA:** 3.98/4.0
 
-<style>
-  /* --- 1. 调宽左右距离 (使用你想要的 100%) --- */
-  .page__content {
-    max-width: 100% !important; 
-  }
-  
+<style>  
   /* --- 2. 更改正文段落 (p) 的字体和间距 --- */
   .page__content p {
     font-family: "Calibri", sans-serif !important;
