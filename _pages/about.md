@@ -18,6 +18,13 @@ I am actively seeking new research opportunities and am eager to collaborate wit
 ## Research Interest
 * AI Agent, Planning & Reasoning, Natural Language Processing, Graph Model
 
+## Publication
+* **RAGRouter-Bench: A Dataset and Benchmark for Adaptive RAG Routing**
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp; **Ziqi Wang**, Xi Zhu, Shuhang Lin, Haochen Xue, Minghao Guo , and Yongfeng Zhang.
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp; *Under Review at ACL Rolling Review (ARR)*, January 2026.
+
 ## Research Experience
 * **Research Assistant**, Advisor: [Prof. Yongfeng Zhang](https://yongfeng.me/), Rutgers University, June 2025 – Present
 
