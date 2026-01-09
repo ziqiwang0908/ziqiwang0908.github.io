@@ -21,7 +21,7 @@ I am actively seeking new research opportunities and am eager to collaborate wit
 ## Publication
 * **RAGRouter-Bench: A Dataset and Benchmark for Adaptive RAG Routing**
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp; **Ziqi Wang**, Xi Zhu, Shuhang Lin, Haochen Xue, Minghao Guo , and Yongfeng Zhang.
+  &nbsp;&nbsp;&nbsp;&nbsp; <u>**Ziqi Wang**</u>, Xi Zhu, Shuhang Lin, Haochen Xue, Minghao Guo , and Yongfeng Zhang.
   <br>
   &nbsp;&nbsp;&nbsp;&nbsp; *Under Review at ACL Rolling Review (ARR)*, January 2026.
 
