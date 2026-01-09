@@ -21,9 +21,9 @@ I am actively seeking new research opportunities and am eager to collaborate wit
 ## Publication
 * **RAGRouter-Bench: A Dataset and Benchmark for Adaptive RAG Routing**
   <br>
-  &nbsp;&nbsp; <u>**Ziqi Wang**</u>, Xi Zhu, Shuhang Lin, Haochen Xue, Minghao Guo , and Yongfeng Zhang.
+  <u>**Ziqi Wang**</u>, Xi Zhu, Shuhang Lin, Haochen Xue, Minghao Guo , and Yongfeng Zhang.
   <br>
-  &nbsp;&nbsp; *Under Review at ACL Rolling Review (ARR)*, January 2026.
+  *Under Review at ACL Rolling Review (ARR)*, January 2026.
 
 ## Research Experience
 * **Research Assistant**, Advisor: [Prof. Yongfeng Zhang](https://yongfeng.me/), Rutgers University, June 2025 – Present
