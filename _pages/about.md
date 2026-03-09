@@ -22,16 +22,15 @@ This semester, I am the Teaching Assistant for [Prof. Wes Cowan](https://sites.r
   <u><strong>Ziqi Wang</strong></u>, Huaiyuan Yao, Hua Wei, Hang Zhou, and Xiao Luo.
   <br>
   *Under Review at IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)*, 2026.
-* **RAGRouter-Bench: A Dataset and Benchmark for Adaptive RAG Routing**
+* **RAGRouter-Bench: A Dataset and Benchmark for Adaptive RAG Routing** [[arXiv]](https://arxiv.org/abs/2602.00296)
   <br>
   <u><strong>Ziqi Wang</strong></u>, Xi Zhu, Shuhang Lin, Haochen Xue, Minghao Guo, and Yongfeng Zhang.
   <br>
   *Under Review at ACL Rolling Review (ARR)*, January 2026.
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp; [[arXiv]](https://arxiv.org/abs/2602.00296)
 
 ## Research Experience
-* **Research Assistant**, Advisor:** [Prof. Xiao Luo](https://luoxiao12.github.io/), University of Wisconsin-Madison, December 2025 – Prescent
+* **Research Assistant**, Advisor: [Prof. Xiao Luo](https://luoxiao12.github.io/), University of Wisconsin-Madison, December 2025 – Prescent
 * **Research Assistant**, Advisor: [Prof. Yongfeng Zhang](https://yongfeng.me/), Rutgers University, June 2025 – January 2026
 
 ## Teaching Experience
