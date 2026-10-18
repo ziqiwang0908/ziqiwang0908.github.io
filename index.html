@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ziqi (Olivia) Wang | LLM Agents &amp; Reasoning</title>
+  <meta name="author" content="Ziqi Wang">
+  <meta name="description" content="Homepage of Ziqi (Olivia) Wang, M.S. student in Computer Science at Rutgers University, working on reliable and adaptive LLM agents.">
+  <meta name="keywords" content="Ziqi Wang, Olivia Wang, Rutgers, LLM agents, retrieval-augmented generation, reasoning, AURORA, RAGRouter-Bench">
+  <link rel="canonical" href="https://ziqiwang0908.github.io/">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Ziqi (Olivia) Wang">
+  <meta property="og:description" content="M.S. in Computer Science at Rutgers University · Reliable and adaptive LLM agents.">
+  <meta property="og:image" content="https://ziqiwang0908.github.io/images/portrait.jpg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // Apply a saved theme before first paint to avoid a flash.
+    try {
+      var saved = localStorage.getItem("theme");
+      if (saved === "light" || saved === "dark") document.documentElement.setAttribute("data-theme", saved);
+    } catch (e) {}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ziqi Wang",
+    "alternateName": "Olivia Wang",
+    "url": "https://ziqiwang0908.github.io/",
+    "email": "mailto:ziqi.wang0908@rutgers.edu",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Rutgers University" },
+    "sameAs": [
+      "https://github.com/ziqiwang0908",
+      "https://www.linkedin.com/in/ziqi-wang-97096a303"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Icon sprite: referenced below with <use href="#i-..."> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></symbol>
+    <symbol id="i-data" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V11M10 20V5M16 20v-6M22 20H2"/></symbol>
+    <symbol id="i-paper" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 11h7M9 14h7M9 17h4"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand-mark" href="#top">Ziqi Wang</a>
+      <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">Menu</button>
+      <nav id="site-navigation" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#research">Research</a>
+        <a href="#industry">Industry</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#service">Service</a>
+      </nav>
+      <div class="topbar-actions">
+        <a class="cv-button" href="https://ziqiwang0908.github.io/ziqiwang_resume/" target="_blank" rel="noopener">
+          <svg class="icon"><use href="#i-file"/></svg>CV
+        </a>
+        <button class="icon-button theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon sun"><use href="#i-sun"/></svg>
+          <svg class="icon moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="top" class="page-shell">
+
+    <!-- ================= Profile ================= -->
+    <aside class="profile-column" aria-label="Profile">
+      <section class="profile-block">
+        <div class="portrait-wrap">
+          <img class="portrait" src="images/portrait.jpg" alt="Portrait of Ziqi Wang" width="560" height="560">
+        </div>
+        <h1 class="profile-name">Ziqi Wang</h1>
+        <p class="profile-alt">(Olivia)</p>
+        <p class="profile-role">M.S. Student in Computer Science</p>
+        <p class="profile-affiliation">
+          <a href="https://www.cs.rutgers.edu/" target="_blank" rel="noopener">Department of Computer Science</a><br>
+          <a href="https://www.rutgers.edu/" target="_blank" rel="noopener">Rutgers University</a>
+        </p>
+
+        <div class="contact-list">
+          <span class="contact-item"><svg class="icon"><use href="#i-pin"/></svg>New Brunswick, NJ</span>
+          <span class="contact-item"><svg class="icon"><use href="#i-mail"/></svg><a href="mailto:ziqi.wang0908@rutgers.edu">ziqi.wang0908@rutgers.edu</a></span>
+        </div>
+
+        <div class="profile-links" aria-label="Profiles">
+          <a class="profile-icon-link" href="mailto:ziqi.wang0908@rutgers.edu" aria-label="Email" title="Email">
+            <svg class="icon"><use href="#i-mail"/></svg>
+          </a>
+          <a class="profile-icon-link" href="https://github.com/ziqiwang0908" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <svg class="icon solid"><use href="#i-github"/></svg>
+          </a>
+          <a class="profile-icon-link" href="https://www.linkedin.com/in/ziqi-wang-97096a303" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <svg class="icon solid"><use href="#i-linkedin"/></svg>
+          </a>
+          <a class="profile-icon-link" href="https://ziqiwang0908.github.io/ziqiwang_resume/" target="_blank" rel="noopener" aria-label="CV" title="CV">
+            <svg class="icon"><use href="#i-file"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="side-section" aria-labelledby="edu-heading">
+        <h2 id="edu-heading" class="side-heading">Education</h2>
+        <ul class="edu-list">
+          <li class="edu-item">
+            <span class="logo-tile"><img src="images/logos/rutgers.png" alt="Rutgers University seal"></span>
+            <span>
+              <strong>Rutgers University</strong>
+              M.S. in Computer Science<br>
+              <span class="edu-meta">Jan 2025 – Dec 2026 (expected) · GPA 4.0/4.0</span>
+            </span>
+          </li>
+          <li class="edu-item">
+            <span class="logo-tile"><img src="images/logos/hebut.png" alt="Hebei University of Technology emblem"></span>
+            <span>
+              <strong>Hebei University of Technology</strong>
+              B.A. in International Chinese Education<br>
+              <span class="edu-meta">Focus: linguistics</span><br>
+              <span class="edu-meta">Sep 2020 – Jun 2024 · GPA 3.98/4.0</span>
+            </span>
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- ================= Main ================= -->
+    <main id="main-content" class="main-column">
+
+      <section id="about" class="content-section">
+        <div class="section-heading-row">
+          <h2 class="section-heading">About Me</h2>
+        </div>
+        <div class="bio">
+          <p>
+            I am a Master's student in Computer Science at <a href="https://www.rutgers.edu/" target="_blank" rel="noopener">Rutgers University</a>.
+            My research focuses on building <strong>reliable and adaptive LLM agents</strong> with stronger
+            <strong>reasoning, learning, and knowledge-utilization</strong> capabilities. I study agentic systems that
+            combine planning, memory, retrieval, and <strong>multimodal understanding</strong> for complex, long-horizon tasks.
+          </p>
+          <p>
+            I currently work with <a href="https://luoxiao12.github.io/" target="_blank" rel="noopener">Prof. Xiao Luo</a> (UW–Madison)
+            and <a href="https://hg-zh.github.io/" target="_blank" rel="noopener">Prof. Hang Zhou</a> (UNC Chapel Hill) on process-aware reward modeling for reinforcement learning of LLM reasoning.
+            Previously, I worked with <a href="https://people.cs.rutgers.edu/~dnm/" target="_blank" rel="noopener">Prof. Dimitris N. Metaxas</a>
+            and <a href="https://yongfeng.me/" target="_blank" rel="noopener">Prof. Yongfeng Zhang</a> at Rutgers, and with
+            <a href="https://wangywust.github.io/" target="_blank" rel="noopener">Prof. Yiwei Wang</a> at UC Merced.
+          </p>
+          <p>
+            Beyond text, I am interested in <strong>multimodal agents</strong>. I study how large audio-language models
+            represent and use non-speech audio such as sound and music, and I contributed to a
+            <a href="#pub-memory-survey">survey on multimodal agent memory</a>. Before moving to computer science, I studied
+            linguistics as an undergraduate, which still shapes my interest in how models represent and use language.
+          </p>
+        </div>
+
+        <div class="research-modules">
+          <article class="research-module">
+            <p class="module-label">Agents</p>
+            <h3>Reliable LLM Agents</h3>
+            <p>Trajectory verification, adaptive rollback, and self-evolving skills that keep long-horizon agents on track.</p>
+            <div class="module-tags"><span>Verification</span><span>Rollback</span><span>Skill learning</span></div>
+          </article>
+          <article class="research-module">
+            <p class="module-label">Knowledge</p>
+            <h3>Retrieval &amp; Knowledge Utilization</h3>
+            <p>Adaptive RAG routing and knowledge-conflict-aware generation that decide when and how to trust external evidence.</p>
+            <div class="module-tags"><span>Adaptive RAG</span><span>Knowledge conflict</span><span>Abstention</span></div>
+          </article>
+          <article class="research-module">
+            <p class="module-label">Reasoning</p>
+            <h3>Reasoning &amp; Reward Modeling</h3>
+            <p>Process-level rewards for RL of LLM reasoning that capture step correctness, future utility, and reasoning structure.</p>
+            <div class="module-tags"><span>RL for LLMs</span><span>Process rewards</span><span>Verification</span></div>
+          </article>
+          <article class="research-module">
+            <p class="module-label">Multimodal</p>
+            <h3>Multimodal Understanding &amp; Memory</h3>
+            <p>Representation gaps in audio-language models and memory mechanisms for multimodal agents.</p>
+            <div class="module-tags"><span>Audio LLMs</span><span>Agent memory</span><span>Interpretability</span></div>
+          </article>
+        </div>
+
+        <p class="contact-note">
+          I am always happy to discuss research and collaboration. Feel free to
+          <a href="mailto:ziqi.wang0908@rutgers.edu">email me</a>!
+        </p>
+      </section>
+
+      <section id="news" class="content-section">
+        <div class="section-heading-row">
+          <h2 class="section-heading">News</h2>
+        </div>
+        <ul class="news-list">
+          <li>
+            <time class="news-date" datetime="2026-10">Oct 2026</time>
+            <span class="news-text">📚 Our survey <a href="https://arxiv.org/abs/2610.19366" target="_blank" rel="noopener"><em>Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory</em></a> is now on arXiv.</span>
+          </li>
+          <li>
+            <time class="news-date" datetime="2026-09">Sep 2026</time>
+            <span class="news-text">👩‍🏫 Serving as a Teaching Assistant for CS462: Introduction to Deep Learning at Rutgers.</span>
+          </li>
+          <li>
+            <time class="news-date" datetime="2026-08">Aug 2026</time>
+            <span class="news-text">🔬 Started working on process-aware reward modeling for LLM reasoning with Prof. Xiao Luo and Prof. Hang Zhou.</span>
+          </li>
+          <li>
+            <time class="news-date" datetime="2026-06">Jun 2026</time>
+            <span class="news-text"><span class="highlight-tag">ACCEPTED</span> 🎉 <a href="#pub-aurora">AURORA</a> has been accepted to <strong>IROS 2026</strong>!</span>
+          </li>
+          <li>
+            <time class="news-date" datetime="2026-06">Jun 2026</time>
+            <span class="news-text">💼 Joined Logitech as an AI Agent Research Intern, building agent infrastructure for engineering and manufacturing.</span>
+          </li>
+          <li>
+            <time class="news-date" datetime="2026-02">Feb 2026</time>
+            <span class="news-text">📄 Released <a href="#pub-ragrouter">RAGRouter-Bench</a>, with the <a href="https://huggingface.co/datasets/Chaplain0908/RAGRouter" target="_blank" rel="noopener">dataset</a> and <a href="https://huggingface.co/spaces/Chaplain0908/RAGRouter-Leaderboard" target="_blank" rel="noopener">leaderboard</a> on Hugging Face.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="publications" class="content-section">
+        <div class="section-heading-row">
+          <h2 class="section-heading">Publications</h2>
+          <span class="section-note">† equal contribution</span>
+        </div>
+
+        <div class="pub-list">
+
+          <article class="pub" id="pub-aurora">
+            <a class="pub-figure" href="images/papers/aurora.png" data-lightbox aria-label="Enlarge AURORA framework figure">
+              <img src="images/papers/aurora.png" alt="AURORA framework: an attention-masked dual-head verifier with local and global heads that triggers adaptive rollback" loading="lazy">
+              <span class="venue-badge accepted">IROS 2026</span>
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="files/papers/AURORA_IROS2026.pdf" target="_blank" rel="noopener">AURORA: Attention-intended Dual Verification with Adaptive Rollback for Large Language Model Agents</a></h3>
+              <p class="pub-authors"><span class="me">Ziqi Wang</span>, Huaiyuan Yao, Hua Wei, Hang Zhou, Xiao Luo</p>
+              <p class="pub-venue"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2026 <span class="status accepted">Accepted</span></p>
+              <p class="pub-tldr">A lightweight dual-head verifier that uses attention masking to separate <b>local step errors</b> from <b>global trajectory drift</b>, so rollback is triggered only when needed. Up to <b>+19.2 pts</b> success rate over GA-Rollback across 3B–14B models.</p>
+              <div class="pub-links">
+                <a class="btn" href="files/papers/AURORA_IROS2026.pdf" target="_blank" rel="noopener"><svg class="icon"><use href="#i-paper"/></svg>PDF</a>
+                <a class="btn" href="https://github.com/ziqiwang0908/AURORA" target="_blank" rel="noopener"><svg class="icon"><use href="#i-code"/></svg>Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub" id="pub-ragrouter">
+            <a class="pub-figure" href="images/papers/ragrouter.png" data-lightbox aria-label="Enlarge RAGRouter-Bench overview figure">
+              <img src="images/papers/ragrouter.png" alt="RAGRouter-Bench overview: query types, five RAG paradigms as routing targets, multi-domain corpora, and quality/efficiency evaluation" loading="lazy">
+              <span class="venue-badge review">Under Review</span>
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="files/papers/RAGRouter-Bench.pdf" target="_blank" rel="noopener">RAGRouter-Bench: A Dataset and Benchmark for Adaptive RAG Routing</a></h3>
+              <p class="pub-authors"><span class="me">Ziqi Wang</span>†, Xi Zhu†, Shuhang Lin, Haochen Xue, Minghao Guo, Yongfeng Zhang</p>
+              <p class="pub-venue"><em>Conference of the European Chapter of the ACL (EACL)</em> <span class="status review">Under Review</span></p>
+              <p class="pub-tldr">The first dataset and benchmark for <b>adaptive RAG routing</b>: 7,727 queries over 4 corpora and 5 RAG paradigms. No paradigm is universally optimal, and <b>joint query–corpus routing</b> beats any fixed choice on the effectiveness–efficiency trade-off.</p>
+              <div class="pub-links">
+                <a class="btn" href="files/papers/RAGRouter-Bench.pdf" target="_blank" rel="noopener"><svg class="icon"><use href="#i-paper"/></svg>PDF</a>
+                <a class="btn" href="https://github.com/ziqiwang0908/RAGRouter-Bench" target="_blank" rel="noopener"><svg class="icon"><use href="#i-code"/></svg>Code</a>
+                <a class="btn" href="https://huggingface.co/datasets/Chaplain0908/RAGRouter" target="_blank" rel="noopener"><svg class="icon"><use href="#i-data"/></svg>Dataset</a>
+                <a class="btn" href="https://huggingface.co/spaces/Chaplain0908/RAGRouter-Leaderboard" target="_blank" rel="noopener"><svg class="icon"><use href="#i-chart"/></svg>Leaderboard</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub" id="pub-saber">
+            <a class="pub-figure" href="images/papers/saber.png" data-lightbox aria-label="Enlarge SABER pipeline figure">
+              <img src="images/papers/saber.png" alt="SABER pipeline: self-prior, conditional reasoning representations, and belief estimation with a 4-cell decision including abstention" loading="lazy">
+              <span class="venue-badge review">Under Review</span>
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="files/papers/SABER.pdf" target="_blank" rel="noopener">Trust or Abstain? A Self-Aware RAG Approach</a></h3>
+              <p class="pub-authors">Xi Zhu, <span class="me">Ziqi Wang</span>, Kai Mei, Wujiang Xu, Minghao Guo, Bangji Yang, Jiajun Fan, Dimitris N. Metaxas</p>
+              <p class="pub-venue"><em>International Conference on Learning Representations (ICLR)</em> <span class="status review">Under Review</span></p>
+              <p class="pub-tldr">SABER estimates whether to <b>trust parametric knowledge, retrieved context, both, or abstain</b>, using self-prior and multi-trace reasoning signals from a frozen LLM, with no LLM fine-tuning.</p>
+              <div class="pub-links">
+                <a class="btn" href="files/papers/SABER.pdf" target="_blank" rel="noopener"><svg class="icon"><use href="#i-paper"/></svg>PDF</a>
+                <a class="btn" href="https://github.com/xizhu1022/SABER" target="_blank" rel="noopener"><svg class="icon"><use href="#i-code"/></svg>Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub" id="pub-memory-survey">
+            <a class="pub-figure" href="images/papers/agent-memory-survey.png" data-lightbox aria-label="Enlarge multimodal agent memory taxonomy figure">
+              <img src="images/papers/agent-memory-survey.png" alt="Two axes of multimodal agent memory: formation and representation, and memory management from static to self-evolving memory" loading="lazy">
+              <span class="venue-badge review">Survey</span>
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="https://arxiv.org/abs/2610.19366" target="_blank" rel="noopener">Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory</a></h3>
+              <p class="pub-authors">Minghao Guo, Qingyue Jiao, Xiujin Liu, Jianhong Pang, Ruimeng Yang, Naihao Xu, Liwei Che, Haochen Xue, <span class="me">Ziqi Wang</span>, et al.</p>
+              <p class="pub-venue"><em>Transactions on Machine Learning Research (TMLR)</em> <span class="status review">Under Review</span></p>
+              <p class="pub-tldr">A survey that organizes multimodal agent memory along two axes: <b>formation &amp; representation</b>, and <b>memory management</b> from static to dynamic to self-evolving memory.</p>
+              <div class="pub-links">
+                <a class="btn" href="https://arxiv.org/abs/2610.19366" target="_blank" rel="noopener"><svg class="icon"><use href="#i-paper"/></svg>arXiv</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="research" class="content-section">
+        <div class="section-heading-row">
+          <h2 class="section-heading">Research Experience</h2>
+        </div>
+        <ol class="timeline">
+
+          <li class="tl-item">
+            <div class="tl-logos">
+              <span class="logo-tile"><img src="images/logos/uwmadison.png" alt="University of Wisconsin–Madison seal"></span>
+              <span class="logo-tile secondary"><img src="images/logos/unc.png" alt="UNC Chapel Hill seal"></span>
+            </div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3 class="tl-title">Process-Aware Reward Modeling for RL of LLM Reasoning</h3>
+                <span class="tl-date">Aug 2026 – Present</span>
+              </div>
+              <p class="tl-meta">Research Assistant · <a href="https://luoxiao12.github.io/" target="_blank" rel="noopener">Prof. Xiao Luo</a> (UW–Madison) &amp; <a href="https://hg-zh.github.io/" target="_blank" rel="noopener">Prof. Hang Zhou</a> (UNC Chapel Hill)</p>
+              <p class="tl-desc">Diagnosing why likelihood- and consensus-based rewards amplify model biases, and designing process-level rewards that score each step by current correctness and future utility, with graph-based verification across reasoning views.</p>
+              <div class="chip-row"><span class="chip">Reward modeling</span><span class="chip">RL for reasoning</span></div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-logos">
+              <span class="logo-tile"><img src="images/logos/ucmerced.png" alt="UC Merced seal"></span>
+            </div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3 class="tl-title">Audio-Type Representation Gaps in Large Audio-Language Models</h3>
+                <span class="tl-date">Apr 2026 – Sep 2026</span>
+              </div>
+              <p class="tl-meta">Research Assistant · <a href="https://wangywust.github.io/" target="_blank" rel="noopener">Prof. Yiwei Wang</a>, University of California, Merced</p>
+              <p class="tl-desc">Showed that sound and music evidence is encoded but under-used at decoding time, then localized critical layers and heads and added lightweight head-gating / LoRA interventions that fix erroneous predictions without full retraining.</p>
+              <div class="chip-row"><span class="chip metric">Probe mAP 0.85 vs. 0.19 random</span><span class="chip">Interpretability</span></div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-logos">
+              <span class="logo-tile"><img src="images/logos/rutgers.png" alt="Rutgers University seal"></span>
+            </div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3 class="tl-title">Self-Evolving Skill Learning in LLM Agents</h3>
+                <span class="tl-date">Mar 2026 – Jul 2026</span>
+              </div>
+              <p class="tl-meta">Research Assistant · <a href="https://people.cs.rutgers.edu/~dnm/" target="_blank" rel="noopener">Prof. Dimitris N. Metaxas</a>, Rutgers University</p>
+              <p class="tl-desc">Built a self-evolving skill framework that bootstraps reusable skills from successful rollouts and refines them from failures, with bandit-guided routing between skills and LLM fallback policies.</p>
+              <div class="chip-row"><span class="chip metric">+10.4 ALFWorld success</span><span class="chip metric">+4.06 ScienceWorld score</span><span class="chip metric">2–9× smaller skill libraries</span></div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-logos">
+              <span class="logo-tile"><img src="images/logos/uwmadison.png" alt="University of Wisconsin–Madison seal"></span>
+              <span class="logo-tile secondary"><img src="images/logos/unc.png" alt="UNC Chapel Hill seal"></span>
+            </div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3 class="tl-title">Trajectory Verification in LLM Agents</h3>
+                <span class="tl-date">Nov 2025 – Mar 2026</span>
+              </div>
+              <p class="tl-meta">Research Assistant · <a href="https://luoxiao12.github.io/" target="_blank" rel="noopener">Prof. Xiao Luo</a> (UW–Madison) &amp; <a href="https://hg-zh.github.io/" target="_blank" rel="noopener">Prof. Hang Zhou</a> (UNC Chapel Hill)</p>
+              <p class="tl-desc">Designed an attention-based dual-head verifier that jointly models local step validity and global trajectory coherence, driving context-isolated verification and adaptive rollback.</p>
+              <div class="chip-row"><span class="chip metric">+19.2% success over GA-Rollback</span><a class="chip" href="#pub-aurora">→ AURORA · IROS 2026</a></div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-logos">
+              <span class="logo-tile"><img src="images/logos/rutgers.png" alt="Rutgers University seal"></span>
+            </div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3 class="tl-title">Adaptive RAG Routing for Retrieval-Augmented LLM Systems</h3>
+                <span class="tl-date">May 2025 – Jan 2026</span>
+              </div>
+              <p class="tl-meta">Research Assistant · <a href="https://yongfeng.me/" target="_blank" rel="noopener">Prof. Yongfeng Zhang</a>, Rutgers University</p>
+              <p class="tl-desc">Built the first adaptive RAG routing benchmark, standardizing 5 RAG paradigms under a unified retriever abstraction, and introduced dual-view query–corpus compatibility metrics with a unified effectiveness–efficiency protocol.</p>
+              <div class="chip-row"><span class="chip metric">7,727 queries · 21,460 documents</span><a class="chip" href="#pub-ragrouter">→ RAGRouter-Bench</a></div>
+            </div>
+          </li>
+
+        </ol>
+      </section>
+
+      <section id="industry" class="content-section">
+        <div class="section-heading-row">
+          <h2 class="section-heading">Industry Experience</h2>
+        </div>
+        <ol class="timeline compact">
+
+          <li class="tl-item">
+            <div class="tl-logos"><span class="logo-tile wide"><img src="images/logos/logitech.png" alt="Logitech logo"></span></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3 class="tl-title">Logitech · AI Agent Research Intern</h3>
+                <span class="tl-date">Jun 2026 – Sep 2026</span>
+              </div>
+              <p class="tl-meta">IT Manufacturing Digitization</p>
+              <p class="tl-desc">Built Pi-based agent infrastructure integrating Claude with internal systems for mouse engineering and manufacturing, plus hierarchical skill retrieval with dynamic loading and session memory.</p>
+              <div class="chip-row"><span class="chip metric">Analysis time 20–30 → 5–8 min</span><span class="chip metric">−45% repeated input tokens</span></div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-logos"><span class="logo-tile wide"><img src="images/logos/siemens.png" alt="Siemens logo"></span></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3 class="tl-title">Siemens · LLM and Data Analysis Intern</h3>
+                <span class="tl-date">May 2025 – Aug 2025</span>
+              </div>
+              <p class="tl-meta">Digital Industrial Software Dept., Beijing</p>
+              <p class="tl-desc">Fine-tuned an industrial Qwen2.5-32B model with LoRA and built a 2,000+ entity Elasticsearch knowledge base for a downstream RAG system.</p>
+              <div class="chip-row"><span class="chip metric">+12% terminology accuracy</span></div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-logos"><span class="logo-tile wide"><img src="images/logos/turingops.png" alt="TuringOps logo"></span></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3 class="tl-title">TuringOps · AI Engineer Intern</h3>
+                <span class="tl-date">Apr 2024 – Nov 2024</span>
+              </div>
+              <p class="tl-meta">Product Development Dept., Shanghai · <a href="https://github.com/TuringOpsSH/NextConsole" target="_blank" rel="noopener">NextConsole</a></p>
+              <p class="tl-desc">Co-developed the user-intent recognition module and a query preprocessing pipeline with sub-question generation and query rewriting.</p>
+              <div class="chip-row"><span class="chip metric">85% intent accuracy</span><span class="chip metric">+16% complex-query accuracy</span></div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-logos"><span class="logo-tile wide"><img src="images/logos/sohu.png" alt="Sohu logo"></span></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3 class="tl-title">Sohu · Back-end Development Intern</h3>
+                <span class="tl-date">Jan 2024 – Apr 2024</span>
+              </div>
+              <p class="tl-meta">Product Development Dept., Wuhan</p>
+              <p class="tl-desc">Built microservices and RESTful APIs with Spring Boot and optimized the JPA persistence layer.</p>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-logos"><span class="logo-tile wide"><img src="images/logos/danfoss.png" alt="Danfoss logo"></span></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3 class="tl-title">Danfoss · Strategic Intern</h3>
+                <span class="tl-date">Mar 2023 – Dec 2023</span>
+              </div>
+              <p class="tl-meta">Security Operation Center, Danfoss Group IT, Tianjin</p>
+              <p class="tl-desc">Automated network traffic analysis and server diagnostics for a 1,000+ device cluster.</p>
+            </div>
+          </li>
+
+        </ol>
+      </section>
+
+      <section id="teaching" class="content-section">
+        <div class="section-heading-row">
+          <h2 class="section-heading">Teaching</h2>
+          <span class="section-note">Teaching Assistant for <a href="https://sites.rutgers.edu/wes-cowan/" target="_blank" rel="noopener">Prof. Wes Cowan</a>, Rutgers University</span>
+        </div>
+        <ul class="teach-list">
+          <li class="teach-item">
+            <span class="teach-term">Fall 2026</span>
+            <span class="teach-course"><strong>CS462</strong>: Introduction to Deep Learning</span>
+          </li>
+          <li class="teach-item">
+            <span class="teach-term">Spring 2026</span>
+            <span class="teach-course"><strong>CS501</strong>: <a href="https://sites.rutgers.edu/wes-cowan/cs-501-mathematical-foundations-of-computer-science/" target="_blank" rel="noopener">Mathematical Foundations of Data Science</a></span>
+          </li>
+          <li class="teach-item">
+            <span class="teach-term">Fall 2025</span>
+            <span class="teach-course"><strong>CS462</strong>: Introduction to Deep Learning <span class="teach-sep">·</span> <strong>CS520</strong>: Introduction to Artificial Intelligence</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="service" class="content-section">
+        <div class="section-heading-row">
+          <h2 class="section-heading">Service</h2>
+        </div>
+        <ul class="teach-list">
+          <li class="teach-item">
+            <span class="teach-term">Reviewer</span>
+            <span class="teach-course"><strong>ICASSP</strong> <span>· IEEE International Conference on Acoustics, Speech and Signal Processing</span></span>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">© <span id="copyright-year">2026</span> Ziqi Wang · Last updated Oct 2026</footer>
+
+  <dialog class="lightbox" aria-label="Figure preview">
+    <button class="lightbox-close" type="button" aria-label="Close">×</button>
+    <img alt="">
+  </dialog>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
